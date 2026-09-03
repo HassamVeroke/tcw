@@ -1,0 +1,54 @@
+/* ============ Header ============ */
+.custom-logo-link img {
+	width: 100%;
+	height: auto;
+	max-width: 200px;
+}
+
+.tcw-header {
+	position: sticky;
+	top: 0;
+	z-index: 100;
+}
+
+.tcw-header.sticky {
+	background: rgba(3, 2, 51, 0.98);
+	border-bottom: 1px solid var(--tcw-border);
+	box-shadow: 0 -8px 20px rgb(0 171 253 / 30%);
+}
+
+body.admin-bar .tcw-header.sticky {
+	top: 32px;
+}
+
+.navbar-nav .menu-item a {
+	color: var(--tcw-offwhite);
+	font-family: 'Outfit';
+	font-weight: 500;
+	font-size: 15px;
+	padding: .4rem .75rem;
+	display: inline-block;
+	line-height: 38px;
+}
+
+.navbar-nav .menu-item a:hover,
+.navbar-nav .menu-item.current-menu-item:not(.contactBtn) a {
+	color: var(--tcw-primary);
+	text-decoration: underline;
+}
+
+.contactBtn {
+	background: linear-gradient(90deg, var(--tcw-primary) -3.25%, #016899 144.72%);
+	border-radius: 8px;
+	line-height: 50px;
+	margin-left: .75rem;
+	transition: all 0.5s ease-in-out;
+}
+
+.contactBtn:hover {
+	background: linear-gradient(-90deg, var(--tcw-primary) -3.25%, #016899 144.72%);
+}
+
+.navbar-nav .menu-item.contactBtn:hover a {
+	color: var(--tcw-offwhite) !important;
+}

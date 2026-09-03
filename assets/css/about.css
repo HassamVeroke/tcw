@@ -1,0 +1,93 @@
+/* ============ About Page ============ */
+.about-hero {
+  padding: 100px 0 100px;
+}
+
+.why-choose-about {
+  padding-top: 27px; 
+}
+
+.why-choose-about::before {
+  content: "";
+  position: absolute;
+  width: 540px;
+  height: 540px;
+  right: 0;
+  top: 80px;
+  background: rgba(1, 174, 255, 0.4);
+  filter: blur(250px);
+  z-index: 0;
+}
+
+.integration-section.about-integration {
+  background: transparent;
+}
+
+.about-integration .int-card {
+  padding: 100px 70px 100px 0;
+  max-width: 450px;
+  float: right;
+  position: relative;
+  text-align: left;
+}
+
+.about-integration .int-card.rightSide {
+  padding: 100px 20px 100px 75px;
+  float: none;
+}
+
+.about-integration .int-card.rightSide .absolute-icon {
+  right: 0;
+  top: 20px;
+}
+
+.integration-section.about-integration .absolute-icon {
+  width: auto;
+  height: auto;
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+  position: absolute;
+  top: 50px;
+  right: 80px;
+  margin-bottom: 0;
+}
+
+.about-integration .int-card h5 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.about-tcw-section .section-lead {
+  max-width: 1036px;
+}
+
+.about-tcw-section > .container { 
+  position: relative; 
+  z-index: 1; 
+}
+
+.zigzag-row { 
+  margin-top: 72px; 
+}
+
+.zz-title {
+  font-size: clamp(22px, 2.4vw, 30px);
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  color: var(--tcw-white);
+}
+
+.zz-text { 
+  color: var(--tcw-text);
+  margin: 0; 
+}
+
+.zz-image img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  min-height: 260px;
+  display: block;
+}

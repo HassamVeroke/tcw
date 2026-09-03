@@ -1,0 +1,63 @@
+/* Legal Pages CSS */
+.legal-hero {
+    position: relative;
+    padding: 135px 0 80px 0;
+}
+
+.legal-hero::after {
+    content:"";
+    position:absolute;
+    top: 330px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100%;
+    max-width: 1140px;
+    height: 1px;
+    background: linear-gradient(270deg,rgba(1, 167, 244, 1) 0%, rgba(14, 14, 60, 0) 100%);
+    z-index:0;
+}
+
+.legal-hero .section-title {
+    font-size: 80px;
+    line-height: 90px;
+    font-weight: 700;
+    margin-bottom: 206px;
+}
+
+.legal-page-section {
+    position: relative;
+    z-index: 1;
+}
+
+.legal-page-section::before,
+.legal-page-section::after {
+    content: "";
+    position: absolute;
+    width: 540px;
+    height: 540px;
+    right: 0;
+    top: 400px;
+    background: rgba(1, 174, 255, 0.4);
+    filter: blur(250px);
+    z-index: 0;
+}
+
+.legal-page-section::after {
+    right: auto;
+    left: -84px;
+    top: auto;
+    bottom: 487px;
+}
+
+.legal-content {
+    position: relative;
+    z-index: 1;
+}
+
+.legal-heading {
+    margin-bottom: 57px;
+}
+
+.legal-body {
+    margin-bottom: 70px;
+}

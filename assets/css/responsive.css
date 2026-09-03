@@ -1,0 +1,300 @@
+/* Responsive tweaks */
+@media (max-width: 991.98px) {
+	.custom-logo-link img {
+		max-width: 150px;
+	}
+
+	.navbar-collapse {
+		background: rgba(3, 2, 51, 0.98);
+		padding: 5%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		max-width: 280px;
+		height: 100dvh;
+		box-shadow: 2px 0px 20px #020233;
+	}
+
+	.navbar-toggler {
+		padding: 0;
+	}
+
+	.navbar-toggler:focus {
+		box-shadow: none;
+	}
+
+	.navbar-nav .menu-item:not(:last-child) {
+		border-bottom: 1px solid #022960;
+	}
+
+	.navbar-nav .menu-item a {
+		padding-left: 0 !important;
+		display: block;
+	}
+
+	.navbar-nav .menu-item.contactBtn {
+		line-height: 30px;
+		margin-top: 20px;
+		padding-left: 10px;
+		display: inline-block;
+		max-width: max-content;
+	}
+
+	.section {
+		padding: 64px 0;
+	}
+
+	.hero-section {
+		padding: 64px 0 40px;
+		overflow: hidden;
+	}
+
+	.industry-grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 10px;
+	}
+
+	.industry-item {
+		border-right: 1px solid rgba(47, 47, 87, 1);
+		padding: 1em;
+	}
+
+	.industry-item:nth-child(2n),
+	.industry-item:last-child {
+		border-right: none;
+	}
+
+	.industry-item:last-child {
+		grid-column: 1 / -1;
+	}
+
+	.intro-section .section-header {
+		margin-bottom: 40px;
+	}
+
+	.panel-cards-row {
+		margin: inherit;
+	}
+
+	.tcw-grid {
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		padding: 0;
+	}
+
+	.ai-team-section {
+		margin-top: 90px;
+		margin-bottom: 55px;
+	}
+
+	.ai-section .section-header {
+		margin-bottom: 50px;
+	}
+
+	.use-card-body {
+		height: 250px;
+	}
+
+	.int-card {
+		padding: 20px 50px 50px 0;
+	}
+
+	.int-card.rightSide {
+		padding: 20px 20px 50px 50px;
+	}
+
+	.contact-section .contact-title {
+		font-size: 40px;
+		line-height: 50px;
+	}
+
+	.contact-section .contact-form {
+		margin-top: 40px;
+	}
+
+	.about-hero,
+	.blog-hero {
+		padding: 50px 0 50px;
+	}
+
+	.zigzag-row {
+		margin-top: 48px;
+	}
+
+	.legal-hero .section-title {
+		font-size: 50px;
+		line-height: 60px;
+		margin-bottom: 50px;
+	}
+
+	.legal-hero {
+		padding: 70px 0 60px 0;
+	}
+
+	.legal-hero::after {
+		top: 150px;
+	}
+
+	.legal-heading {
+		margin-bottom: 30px;
+	}
+
+	.legal-body {
+		margin-bottom: 40px;
+	}
+
+	.tcw-footer {
+		padding: 40px 0 20px;
+	}
+
+	.footer-nav {
+		margin: 16px 0 33px;
+	}
+
+	.footer-bottom {
+		padding-top: 16px;
+		text-align: center;
+		gap: 15px;
+	}
+
+	.footer-legal-nav {
+		justify-content: center;
+	}
+}
+
+@media (max-width: 782px) {
+	body.admin-bar .tcw-header.sticky {
+		top: 46px;
+	}
+}
+
+@media (max-width: 767.98px) {
+	.section {
+		padding: 50px 10px;
+	}
+
+	.industry-grid {
+		padding: 20px;
+		max-width: 100%;
+	}
+
+	.industry-grid {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.industry-item {
+		border-right: none;
+		border-bottom: 1px solid rgba(47, 47, 87, 1);
+	}
+
+	.industry-item:last-child {
+		border-bottom: none;
+	}
+
+	.tcw-grid .tcw-grid-item:last-child {
+		max-width: 100%;
+	}
+
+	.panel-card,
+	.panel-card.panel-dark,
+	.panel-card.panel-blue {
+		padding: 20px;
+	}
+
+	.about-hero,
+	.blog-hero {
+		padding: 50px 10px 20px;
+	}
+
+	.legal-hero {
+		padding: 50px 0;
+	}
+
+	.legal-hero::after {
+		top: 120px;
+	}
+
+	.legal-hero .section-title {
+		font-size: 40px;
+		line-height: 50px;
+	}
+
+	.legal-page-section {
+		padding: 0 10px;
+	}
+
+	.legal-page-section::before,
+	.legal-page-section::after,
+	.hero-circle {
+		width: 100%;
+	}
+
+	.about-hero.contact-section {
+		padding: 50px 10px;
+	}
+
+	.contact-section .contact-title {
+		font-size: 32px;
+		line-height: 40px;
+	}
+
+	.contact-section .contact-form {
+		margin-top: 20px;
+		padding: 16px;
+	}
+
+	.contact-section .ff-default .ff-btn-lg,
+	.contact-section .ff-default .ff-el-form-control {
+		padding: 12px;
+		border-radius: 7px;
+	}
+
+	.secure-trusted-section .col-md-4:nth-child(2) .icon-item {
+		margin: 20px 0;
+	}
+
+	.int-card {
+		padding: 40px 20px !important;
+	}
+
+	.integration-section.about-integration .absolute-icon {
+		right: 30%;
+		top: -30px;
+	}
+
+	.about-integration .int-card.rightSide .absolute-icon {
+		right: 40%;
+		top: -50px;
+	}
+
+	.integration-section .cards-row::before,
+	.integration-section .cards-row::after {
+		display: none;
+	}
+
+	.stat-card {
+		max-width: 100%;
+	}
+
+	.use-card-body {
+		height: auto;
+	}
+
+	.blog-filters {
+		margin-bottom: 35px
+	}
+
+	.blog-card-content {
+		padding: 22px
+	}
+
+	.blog-card-title {
+		font-size: 21px
+	}
+}
+
+@media (max-width: 570px) {
+	.single-post main {
+		max-width: calc(100% - 40px);
+	}
+}

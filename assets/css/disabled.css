@@ -1,0 +1,243 @@
+
+/* ============ Logo strip ============ */
+/* .logo-strip {
+  width: 100%;
+  overflow: hidden;
+  background-color: transparent;
+  margin-inline: auto;
+}
+
+.logo-strip-heading {
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: var(--tcw-text);
+  margin-bottom: 29px;
+}
+
+.logo-slider {
+  width: 100%;
+  max-width: 90%;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 18px;
+  padding: 35px 77px;
+  overflow: hidden;
+  position: relative;
+}
+
+.logo-track {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  animation: logoTicker 35s linear infinite;
+}
+
+.logo-item {
+  flex-shrink: 0;
+  width: auto;
+  margin: 0 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-item img {
+  max-height: 55px;
+  width: auto;
+  transition: .3s ease;
+}
+
+@keyframes logoTicker {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.logo-track:hover {
+  animation-play-state: paused;
+}
+
+.logo-slider::before,
+.logo-slider::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 178px;
+  height: 100%;
+  z-index: 2;
+}
+
+.logo-slider::before {
+  left: 0;
+  background: linear-gradient(to right,
+      var(--tcw-bg),
+      transparent);
+}
+
+.logo-slider::after {
+  right: 0;
+  background: linear-gradient(to left,
+      var(--tcw-bg),
+      transparent);
+} */
+
+/* .tcw-grid-item:last-child {
+  grid-column: 1 / -1;
+  justify-self: center;
+  width: 100%;
+  max-width: 350px;
+}
+
+.capabilitiesSwiper.swiper {
+  padding: 10px 0 !important;
+}
+
+.swiper-slide {
+  height: auto !important;
+}
+
+.slider-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 42px;
+  margin-top: 70px;
+}
+
+.slider-arrow {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, .28);
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--tcw-white);
+  transition: .3s ease;
+  cursor: pointer;
+}
+
+.slider-arrow:hover {
+  background: rgba(0, 183, 255, .08);
+  border-color: var(--tcw-primary);
+  color: var(--tcw-primary);
+}
+
+.slider-arrow i {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.slider-controls .swiper-pagination {
+  position: relative;
+  width: auto;
+  bottom: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: fit-content;
+  bottom: auto !important;
+}
+
+.slider-controls .swiper-pagination-bullet {
+  width: 30px;
+  height: 12px;
+  border-radius: 30px;
+  margin: 0 !important;
+  background: rgba(255, 255, 255, .16);
+  opacity: 1;
+  transition: .3s ease;
+
+}
+
+.slider-controls .swiper-pagination-bullet-active {
+  background: var(--tcw-primary);
+
+}
+
+.slider-arrow.swiper-button-disabled {
+  opacity: .35;
+  cursor: not-allowed;
+
+} */
+
+/* meet our team inner section */
+/* .ai-team-section {
+  margin-top: 181px;
+  margin-bottom: 117px;
+}
+
+.use-card {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  height: 475px;
+  padding: 0 24px 51px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.use-card-body {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 6px;
+  height: 170px;
+}
+
+.use-card-body h5 {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.use-card-body p {
+  color: var(--tcw-text);
+  font-size: 15px;
+  line-height: 24px;
+  margin: 0;
+} */
+
+/* Secure & Trusted Cards */
+/* .secure-trusted-section {
+  background-color: #0E0E3C;
+}
+
+.secure-trusted-section .section-lead {
+  max-width: 898px;
+  margin-bottom: 65px;
+} */
+
+/* Responsive tweaks */
+/* @media (max-width: 991.98px) {
+	.slider-controls {
+		margin-top: 35px;
+		gap: 15px;
+	}
+
+	.slider-controls .swiper-pagination-bullet {
+		width: 16px;
+		height: 6px;
+	}
+
+	.slider-arrow {
+		width: 24px;
+		height: 24px;
+	}
+
+	.slider-arrow i {
+		font-size: 12px;
+	}
+} */

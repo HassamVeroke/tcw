@@ -1,0 +1,75 @@
+/* Hero Section */
+.about-hero.contact-section {
+    padding: 80px 0;
+}
+
+.contact-section .eyebrow.contact-pill {
+    color: #fff;
+    background: linear-gradient(105.07deg, rgba(217, 217, 217, 0.12) -2.98%, rgba(115, 115, 115, 0.06) 97.56%);
+    backdrop-filter: blur(11px);
+}
+
+.contact-section .eyebrow.contact-pill i {
+    color: #007BB5;
+    font-size: 14px;
+}
+
+.contact-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+.contact-section .contact-title {
+    font-family: 'Outfit';
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 76px;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    margin-bottom: 12px;
+}
+
+.contact-section .contact-lead {
+    max-width: 486px;
+    margin-bottom: 48px;
+}
+
+.contact-section .contact-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.contact-section .contact-list li {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-wrap: anywhere;
+    gap: 7px;
+    margin-bottom: 16px;
+}
+
+.contact-section .contact-list li i {
+    color: #fff;
+}
+
+.contact-section .contact-form {
+    padding: 23px;
+    background: linear-gradient(105.07deg, rgba(217, 217, 217, 0.12) -2.98%, rgba(115, 115, 115, 0.06) 97.56%);
+    backdrop-filter: blur(8px);
+    border-radius: 14px;
+    border: 1px solid #2f2f4f;
+}
+
+.contact-section .ff-default .ff-el-form-control {
+    padding: 20px;
+    background: linear-gradient(105.07deg, rgba(217, 217, 217, 0.12) -2.98%, rgba(115, 115, 115, 0.06) 97.56%);
+    backdrop-filter: blur(8px);
+    border-radius: 14px;
+    border-color: #2f2f4f !important;
+}
+
+.contact-section .ff-default .ff-btn-lg {
+    padding: 16px;
+    border-radius: 14px;
+}
