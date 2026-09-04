@@ -1,0 +1,338 @@
+/* ============ TCW Industry Pages ============ */
+
+/* Hero */
+.tc-hero {
+  min-height: 680px;
+  padding: 60px 0 90px;
+  background:
+    radial-gradient(circle at 15% 45%, rgba(0, 145, 255, 0.20), transparent 30%),
+    radial-gradient(circle at 75% 20%, rgba(20, 35, 180, 0.25), transparent 32%),
+    linear-gradient(115deg, #04194d 0%, #020b3d 48%, #05002f 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.tc-hero::before {
+  content: "";
+  position: absolute;
+  width: 650px;
+  height: 650px;
+  border: 1px solid rgba(0, 174, 255, 0.10);
+  border-radius: 50%;
+  right: -260px;
+  top: -240px;
+  pointer-events: none;
+}
+
+.tc-hero::after {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border: 1px solid rgba(0, 174, 255, 0.07);
+  border-radius: 50%;
+  left: -250px;
+  bottom: -300px;
+  pointer-events: none;
+}
+
+.tc-hero-content {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.tc-hero-title {
+  font-size: clamp(34px, 4.5vw, 58px);
+  line-height: 1.1;
+  letter-spacing: -1.5px;
+  margin: 0 0 25px;
+  color: var(--tcw-white);
+  font-weight: 700;
+}
+
+.tc-hero-title .blue {
+  color: var(--tcw-primary);
+}
+
+.tc-hero-description {
+  max-width: 720px;
+  margin: 0 auto 32px;
+  color: #c7d2ee;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.tc-stat-wrapper {
+  max-width: 1020px;
+  margin: 70px auto 0;
+}
+
+.tc-stat {
+  padding: 27px 25px;
+  border: 1px solid rgba(0, 172, 255, 0.55);
+  border-radius: 13px;
+  background: linear-gradient(145deg, rgba(17, 78, 140, 0.55), rgba(18, 28, 78, 0.65));
+  backdrop-filter: blur(10px);
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.22);
+  text-align: left;
+}
+
+.tc-stat-dot {
+  width: 13px;
+  height: 13px;
+  background: var(--tcw-primary);
+  border-radius: 50%;
+  margin-bottom: 10px;
+  box-shadow: 0 0 12px rgba(0, 170, 255, 0.7);
+}
+
+.tc-stat-number {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--tcw-white);
+  margin-bottom: 4px;
+  font-family: 'Outfit', sans-serif;
+}
+
+.tc-stat-text {
+  font-size: 13px;
+  color: #9eafd3;
+}
+
+/* Intro */
+.tc-intro {
+  background:
+    radial-gradient(circle at 85% 30%, rgba(0, 100, 220, 0.13), transparent 28%),
+    #030632;
+}
+
+.tc-centered {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+/* Challenges */
+.tc-challenges {
+  background: linear-gradient(120deg, #031447, #02052e 60%, #05002f);
+}
+
+.tc-section-heading {
+  max-width: 720px;
+}
+
+.tc-card {
+  padding: 30px;
+  border-radius: 15px;
+  background: rgba(11, 30, 75, 0.72);
+  border: 1px solid rgba(0, 154, 255, 0.25);
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.tc-card:hover {
+  border-color: rgba(0, 174, 255, 0.65);
+  transform: translateY(-4px);
+}
+
+.tc-card-number {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: rgba(0, 160, 255, 0.12);
+  border: 1px solid rgba(0, 174, 255, 0.3);
+  color: var(--tcw-primary);
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 22px;
+  font-family: 'Outfit', sans-serif;
+}
+
+.industry-card-title {
+  color: var(--tcw-white);
+  font-size: 20px;
+  margin: 0 0 12px;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+}
+
+.industry-card-text {
+  color: #9eafd0;
+  font-size: 15px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Solution */
+.tc-solution {
+  background:
+    radial-gradient(circle at 15% 50%, rgba(0, 126, 255, 0.16), transparent 30%),
+    #02052e;
+}
+
+.tc-workflow {
+  padding: 30px;
+  border-radius: 20px;
+  background: linear-gradient(145deg, rgba(7, 45, 94, 0.95), rgba(5, 8, 51, 0.98));
+  border: 1px solid rgba(0, 167, 255, 0.35);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.28);
+}
+
+.tc-workflow-title {
+  color: var(--tcw-white);
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  font-family: 'Outfit', sans-serif;
+}
+
+.tc-workflow-step {
+  padding: 18px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.045);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.tc-workflow-step.highlight {
+  background: linear-gradient(135deg, #009fe9, #0075bd);
+  border-color: #00b1ff;
+}
+
+.tc-workflow-step small {
+  color: #6fa5d1;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.tc-workflow-step.highlight small {
+  color: #c9ecff;
+}
+
+.tc-workflow-step div {
+  color: var(--tcw-white);
+  font-size: 15px;
+  margin-top: 5px;
+  font-weight: 600;
+}
+
+.tc-arrow {
+  text-align: center;
+  color: #008dd5;
+  font-size: 20px;
+  height: 25px;
+  line-height: 25px;
+}
+
+/* Capabilities */
+.tc-capabilities {
+  background: linear-gradient(135deg, #03184c, #02052e);
+}
+
+.tc-capability {
+  padding: 32px;
+  border-radius: 15px;
+  background: rgba(8, 31, 77, 0.70);
+  border: 1px solid rgba(0, 154, 255, 0.25);
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.tc-capability:hover {
+  border-color: rgba(0, 174, 255, 0.65);
+  transform: translateY(-4px);
+}
+
+.tc-capability-number {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--tcw-primary);
+  letter-spacing: 1px;
+  margin-bottom: 13px;
+  font-family: 'Outfit', sans-serif;
+  text-transform: uppercase;
+}
+
+/* Benefits */
+.tc-benefits {
+  background: #02052e;
+}
+
+.tc-benefit {
+  border-left: 3px solid var(--tcw-primary);
+  padding-left: 24px;
+}
+
+.tc-benefit h3 {
+  color: var(--tcw-white);
+  font-size: 20px;
+  margin: 0 0 8px;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+}
+
+.tc-benefit p {
+  color: #9eafd0;
+  font-size: 15px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Use Cases */
+.tc-usecases {
+  background:
+    radial-gradient(circle at 50% 0%, rgba(0, 130, 255, 0.17), transparent 40%),
+    linear-gradient(135deg, #03194d, #05002f);
+}
+
+.tc-usecase-card {
+  background: rgba(10, 33, 79, 0.58);
+  border: 1px solid rgba(0, 161, 255, 0.28);
+}
+
+/* Why TCW */
+.tc-why {
+  background: linear-gradient(120deg, #02052e, #031346);
+}
+
+.tc-pill {
+  padding: 15px 24px;
+  color: #d8e7ff;
+  border: 1px solid rgba(0, 165, 255, 0.35);
+  background: rgba(0, 112, 190, 0.12);
+  border-radius: 9px;
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-block;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.tc-pill:hover {
+  background: rgba(0, 112, 190, 0.24);
+  border-color: rgba(0, 165, 255, 0.65);
+}
+
+/* Responsive */
+@media (max-width: 991.98px) {
+  .tc-hero {
+    min-height: auto;
+    padding: 50px 0 70px;
+  }
+  .tc-workflow {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .tc-hero-title {
+    font-size: 36px;
+    letter-spacing: -1px;
+  }
+  .tc-hero-description {
+    font-size: 15px;
+  }
+  .tc-stat {
+    margin-bottom: 10px;
+  }
+}

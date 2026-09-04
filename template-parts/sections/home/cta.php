@@ -3,17 +3,30 @@
  * CTA Section
 */
 
-$section = get_field('cta_section', 'option');
+$industry_cta = tcw_get_section('industry_cta_section');
 
-if (!$section) {
-    return;
+if (!empty($industry_cta) && (!empty($industry_cta['heading']) || !empty($industry_cta['title']))) {
+    $section          = $industry_cta;
+    $heading          = $section['heading'] ?? ($section['title'] ?? '');
+    $eyebrow          = $section['eyebrow'] ?? '';
+    $image            = $section['brand_image'] ?? '';
+    $paragraph        = $section['description'] ?? '';
+    $paragraph_1      = $section['description_1'] ?? '';
+    $primary_button   = $section['primary_button'] ?? ($section['button'] ?? '');
+    $secondary_button = $section['secondary_button'] ?? '';
+} else {
+    $section          = get_field('cta_section', 'option');
+    if (!$section) {
+        return;
+    }
+    $heading          = $section['heading'] ?? '';
+    $eyebrow          = '';
+    $image            = $section['brand_image'] ?? '';
+    $paragraph        = $section['description'] ?? '';
+    $paragraph_1      = $section['description_1'] ?? '';
+    $primary_button   = $section['primary_button'] ?? '';
+    $secondary_button = $section['secondary_button'] ?? '';
 }
-
-$image            = $section['brand_image'] ?? '';
-$paragraph		  = $section['description'] ?? '';
-$paragraph_1	  = $section['description_1'] ?? '';
-$primary_button   = $section['primary_button'] ?? '';
-$secondary_button = $section['secondary_button'] ?? '';
 
 ?>
 
@@ -24,6 +37,16 @@ $secondary_button = $section['secondary_button'] ?? '';
         <div class="cta-panel text-center">
 
             <div class="content-wrapper">
+
+                <?php if (!empty($eyebrow)) : ?>
+
+                    <span class="eyebrow mx-auto mb-2">
+
+                        <?php echo esc_html($eyebrow); ?>
+
+                    </span>
+
+                <?php endif; ?>
 
                 <?php if (!empty($image)) : ?>
 
@@ -37,11 +60,11 @@ $secondary_button = $section['secondary_button'] ?? '';
 
                 <?php endif; ?>
 
-                <?php if (!empty($section['heading'])) : ?>
+                <?php if (!empty($heading)) : ?>
 
                     <h2 class="section-title m-0">
 
-                        <?php echo esc_html($section['heading']); ?>
+                        <?php echo esc_html($heading); ?>
 
                     </h2>
 
