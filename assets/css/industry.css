@@ -41,15 +41,6 @@
   margin: 0 auto;
 }
 
-.tc-hero-title {
-  font-size: clamp(34px, 4.5vw, 58px);
-  line-height: 1.1;
-  letter-spacing: -1.5px;
-  margin: 0 0 25px;
-  color: var(--tcw-white);
-  font-weight: 700;
-}
-
 .tc-hero-title .blue {
   color: var(--tcw-primary);
 }
@@ -194,7 +185,8 @@
   border: 1px solid rgba(255, 255, 255, 0.07);
 }
 
-.tc-workflow-step.highlight {
+.tc-workflow-step.highlight,
+.tc-workflow-step:hover {
   background: linear-gradient(135deg, #009fe9, #0075bd);
   border-color: #00b1ff;
 }
@@ -319,6 +311,7 @@
     min-height: auto;
     padding: 50px 0 70px;
   }
+
   .tc-workflow {
     margin-top: 20px;
   }
@@ -329,9 +322,11 @@
     font-size: 36px;
     letter-spacing: -1px;
   }
+
   .tc-hero-description {
     font-size: 15px;
   }
+
   .tc-stat {
     margin-bottom: 10px;
   }
