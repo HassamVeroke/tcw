@@ -9,7 +9,6 @@ if (!$section) {
     return;
 }
 
-$eyebrow     = $section['eyebrow'] ?? '';
 $title       = $section['title'] ?? '';
 $highlight   = $section['highlight'] ?? '';
 $description = $section['description'] ?? '';
@@ -24,12 +23,6 @@ $stats       = $section['stats'] ?? [];
     <div class="container position-relative">
 
         <div class="tc-hero-content text-center">
-
-            <?php if (!empty($eyebrow)) : ?>
-                <span class="eyebrow tc-label" data-gsap="fade-in">
-                    <?php echo esc_html($eyebrow); ?>
-                </span>
-            <?php endif; ?>
 
             <?php if (!empty($title) || !empty($highlight)) : ?>
                 <h1 class="tc-hero-title hero-title" data-gsap="fade-up">

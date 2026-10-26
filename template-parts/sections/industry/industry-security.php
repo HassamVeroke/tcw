@@ -5,10 +5,6 @@
 
 $section = tcw_get_section('industry_security_section');
 
-$eyebrow = !empty($section['eyebrow'])
-    ? $section['eyebrow']
-    : 'SECURITY & COMPLIANCE';
-
 $heading = !empty($section['heading'])
     ? $section['heading']
     : (!empty($section['title']) ? $section['title'] : 'Secure by Design');
@@ -47,16 +43,6 @@ $features = !empty($section['features']) && is_array($section['features'])
         <div class="tc-security-card" data-gsap="fade-up">
 
             <div class="tc-security-header text-center mx-auto">
-
-                <div class="tc-security-badge-icon mb-3" data-gsap="fade-down">
-                    <i class="bi bi-shield-lock-fill"></i>
-                </div>
-
-                <?php if (!empty($eyebrow)) : ?>
-                    <span class="eyebrow tc-section-label" data-gsap="fade-in">
-                        <?php echo esc_html($eyebrow); ?>
-                    </span>
-                <?php endif; ?>
 
                 <?php if (!empty($heading)) : ?>
                     <h2 class="section-title mb-3" data-gsap="fade-up">
