@@ -246,29 +246,24 @@
   text-transform: uppercase;
 }
 
-/* Benefits */
-.tc-benefits {
-  background: #02052e;
+/* Capability Modules & Integrations */
+.tc-capability-modules {
+  margin-top: 48px;
 }
 
-.tc-benefit {
-  border-left: 3px solid var(--tcw-primary);
-  padding-left: 24px;
+.tc-capability-modules-inner {
+  max-width: 920px;
+  padding: 24px 32px;
+  border-radius: 14px;
+  background: rgba(8, 31, 77, 0.50);
+  border: 1px solid rgba(0, 154, 255, 0.25);
+  backdrop-filter: blur(10px);
 }
 
-.tc-benefit h3 {
-  color: var(--tcw-white);
-  font-size: 20px;
-  margin: 0 0 8px;
-  font-family: 'Outfit', sans-serif;
-  font-weight: 700;
-}
-
-.tc-benefit p {
-  color: #9eafd0;
-  font-size: 15px;
+.tc-capability-modules-text {
+  color: #c7d2ee;
+  font-size: 15.5px;
   line-height: 1.7;
-  margin: 0;
 }
 
 /* Use Cases */
@@ -283,26 +278,101 @@
   border: 1px solid rgba(0, 161, 255, 0.28);
 }
 
-/* Why TCW */
-.tc-why {
-  background: linear-gradient(120deg, #02052e, #031346);
+/* Security */
+.tc-security {
+  background:
+    radial-gradient(circle at 50% 30%, rgba(0, 145, 255, 0.14), transparent 45%),
+    linear-gradient(135deg, #02052e 0%, #031448 50%, #02052e 100%);
+  position: relative;
+  overflow: hidden;
 }
 
-.tc-pill {
-  padding: 15px 24px;
-  color: #d8e7ff;
-  border: 1px solid rgba(0, 165, 255, 0.35);
-  background: rgba(0, 112, 190, 0.12);
-  border-radius: 9px;
+.tc-security::before {
+  content: "";
+  position: absolute;
+  width: 550px;
+  height: 550px;
+  border: 1px solid rgba(0, 174, 255, 0.08);
+  border-radius: 50%;
+  left: -200px;
+  bottom: -200px;
+  pointer-events: none;
+}
+
+.tc-security-card {
+  padding: 56px 44px;
+  border-radius: 20px;
+  background: linear-gradient(145deg, rgba(8, 31, 77, 0.65), rgba(4, 15, 48, 0.75));
+  border: 1px solid rgba(0, 165, 255, 0.28);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(12px);
+}
+
+.tc-security-badge-icon {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto;
+  border-radius: 14px;
+  background: rgba(0, 174, 255, 0.12);
+  border: 1px solid rgba(0, 174, 255, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--tcw-primary);
+  font-size: 24px;
+  box-shadow: 0 0 20px rgba(0, 174, 255, 0.25);
+}
+
+.tc-security-header {
+  max-width: 820px;
+}
+
+.tc-security-lead {
+  color: #c7d2ee;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.tc-security-feature-item {
+  padding: 26px 22px;
+  border-radius: 14px;
+  background: rgba(5, 18, 52, 0.6);
+  border: 1px solid rgba(0, 154, 255, 0.2);
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.tc-security-feature-item:hover {
+  transform: translateY(-3px);
+  border-color: rgba(0, 174, 255, 0.55);
+}
+
+.tc-security-feature-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  background: rgba(0, 174, 255, 0.1);
+  border: 1px solid rgba(0, 174, 255, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--tcw-primary);
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.tc-security-feature-title {
+  color: var(--tcw-white);
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  font-family: 'Outfit', sans-serif;
+}
+
+.tc-security-feature-text {
+  color: #9eafd0;
   font-size: 14px;
-  font-weight: 600;
-  display: inline-block;
-  transition: background 0.2s ease, border-color 0.2s ease;
-}
-
-.tc-pill:hover {
-  background: rgba(0, 112, 190, 0.24);
-  border-color: rgba(0, 165, 255, 0.65);
+  line-height: 1.6;
+  margin: 0;
 }
 
 /* Responsive */
@@ -329,5 +399,9 @@
 
   .tc-stat {
     margin-bottom: 10px;
+  }
+
+  .tc-security-card {
+    padding: 36px 20px;
   }
 }
