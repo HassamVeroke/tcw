@@ -138,6 +138,15 @@ function tcw_enqueue_assets() {
         $responsive_dependencies[] = 'tcw-industry';
     }
 
+    if (is_page_template('templates/page-industries.php')) {
+        wp_enqueue_style(
+            'tcw-industries',
+            get_template_directory_uri() . '/assets/css/industries.css',
+            array('bootstrap', 'tcw-base', 'tcw-header', 'tcw-footer'),
+            filemtime(get_template_directory() . '/assets/css/industries.css')
+        );
+        $responsive_dependencies[] = 'tcw-industries';
+    }
 
     // --- Global Responsive Styles (Loaded last with dynamic dependencies) ---
     wp_enqueue_style(
